@@ -1,0 +1,107 @@
+Comparatif de technologies : Ultra Low Power et types de réseaux possibles
+
+GreenWave Gap 9 : Technologie désignée pour de l’IA embarquée Ultra Low Power. La performance du produit est de 10 µW/MHz. La puissance de traitement de ce produit est de 150.8 GOPS (Giga Opérations Par Seconde) pour une dizaine de mW. La consommation globale est de 50 mW avec une puissance de calcul jusqu’à 50 GOPS. Il comporte le package WL-CSP 3.7mmx3.7mm – BGA 5.5mm x 5.5mm avec 16 pins.  Ce produit possède un contrôleur de périphériques intelligent, avec une performance allant jusqu’à 150 GOPS, comportant un filtre intelligent pour les opérations de filtrage numériques. Le processeur du filtre permet de réaliser le filtrage en Ultra Low Power. Les opérations pouvant être réalisées sont principalement l’IA avec la détection de l’image et du son (reconnaissance vocale, reconnaissance faciale…) et le traitement du signal numérique. Il existe un composant nommé GAPpoc qui basé sur la technologie GAP8 qui comporte un module BLE. 
+Périphériques : 
+-MIPI CSI (Camera Serial Interface) -2 - 2 lanes
+- 10-bit Camera Parallel Interface (CPI)
+- 3 x SPI Maitre/Esclave
+- 3 x I3C Maitre/Esclave
+- 3 x I2S (1 Maitre/Esclave & 2 Esclave) Multi
+channel support TDM
+- 3 x U(S)ART avec contrôle hardware
+- 2 x HyperBus interchangeable, Quad-SPI, OctoSPI, SDIO DDR/SDR interfaces mémoire
+- GPIO / PWM
+- JTAG
+
+
+
+
+Microchip PIC 24 : Opère jusqu’à 16 MIPS à 32 MHz avec 152 µA/MIPS (valeur typique à 2 V) et un courant jusqu’à 10 nA en mode deep sleep et 330 nA en Low Voltage Sleep. Le PIC 24 possède un CTMU (Charge Time Measurement Unit), un module analogique qui peut mesurer le temps différentiel entre deux signaux ou générer un signal asynchrone. Il possède également un contrôleur DMA (Direct Memory Access) qui permet transférer les données de la mémoire et des périphériques indépendamment afin de ne pas surcharger le CPU. Le module PTG (Peripheral Trigger Generator), un séquenceur programmable par l’utilisateur, permet de déclencher des séquences de signaux pour la gestion des autres périphériques. Il est souvent utilisé comme interface entre les autres modules présents. Il y a 26 pins disponibles. Il est compatible avec des modules BLE , WiFi et LoRa.
+Périphériques :
+-Timers
+-Entrée Acquisition
+- Sortie Comparateur
+-Interface Encodeur de Quadrature
+-CTMU
+-Reset
+-UART
+-Contrôle moteur
+-Ports Entrée/Sortie et Interruption
+-SPI
+-I2C
+-Interface Conversion de Données
+-ADC 10 bit et 12 bit
+-Horlorge et calendrier en temps réel
+-Parallel Master Port
+-Comparateur
+-Direct Memory Access
+-Fonctions permettant le contrôle d’un LCD externe par configuration de de pins entrée/sortie
+
+
+
+
+
+TI CC2650 : Technologie destinée aux applications BLE, Zigbee, 6-LowPan et Bluetooth Mesh. Il possède un outil nommé Sensor Controller, qui permet de faire une acquisition de données analogiques et numériques en mode sleep (consommation 10 µW) , et être une interface pour les capteurs présents. Le package est 4-mm × 4-mm et 5-mm × 5-mm VQFN. 
+Périphériques :
+-Pins numériques pouvant être routés sur n’importe quel GPIO
+- 4 Modules Timer (8 timer 16 bit ou 4 de 32 bit)
+- ADC sur 12 bit avec 200000 échantillons par seconde, MUX analogique de 8 channels 
+- Comparateur de temps continue
+- UART
+- Comparateur Analogique Ultra Low Power
+-SPI, MICROWIRE, Ti
+-I2C
+-I2S
+-Horloge temps réel
+- Module de sécurité AES
+- Générateur de nombre réels
+-10, 15 ou 31 GPIO selon le package
+-Capteur de température
+- Support pour 8 boutons à sens capacitif
+
+
+STM32L0 : Le composant comporte plusieurs modes Low Power : 
+-Sleep : 41 µA/MHz
+-Low Power Run : 8.55 µA à 32 kHz, FLASH désactivé
+-Low Power Sleep : 4.65 µA, périphériques éteints
+-Stop avec RTC (Real Time Clock) : 0.82 µA à 1.8 V, 1 µA à 3 V
+-Stop : 415 nA
+-Standby avec RTC : 655 à 3 V, 845 à 1.8 V
+-Standby : 290 nA
+La STM32 est compatibles avec les réseaux BLE , Wifi et LoRA
+Périphériques : 
+-ADC 12 bit
+-DAC 12 bit
+-Comparateurs Ultra Low Power capables de contrôler les tensions analogiques avec un courant qui peut être descendu jusqu’à 3 µA
+-RTC
+-Timer Low power 16 bit
+- LCD avec contrôleur
+-Low Power UART
+-I2C
+-USART
+-SPI
+
+
+PSOC6 Cypress : Fonctionne en Ultra Low Power, en particulier dans le bloc Sigma-Delta (CSD) avec une consommation Ultra Low Power grâce à la technologie CapSense. Les opération d’écriture dans la mémoire Flash ne peuvent pas être réalisées dans ce mode. Compatible avec les réseaux BLE et MESH grâce à son outil informatique Modus Toolbox.
+Périphériques :
+-UART
+-SPI
+-I2C
+-S/PDIF
+- ADC 10 bit
+-Comparateur
+-IDAC, Source de courant programmable
+-PDM (Pulse-Density Modulation) to PCM (Pulse Code Modulation)
+-TDM (Time Division Multiplexed)
+
+
+
+PICOSTRAIN081 :  Composant destiné aux applications Ultra Low Power avec une consommation entre 5 µA et 0.4 mA (vitesse maximale).
+Périphériques : 
+-Contrôleur LCD
+-Interface SPI
+-ADC
+-Oscillateur 10 kHz
+
+
+ 
